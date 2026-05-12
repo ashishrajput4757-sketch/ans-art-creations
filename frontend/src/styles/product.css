@@ -1,0 +1,170 @@
+/* BACKGROUND */
+.product-page {
+  background: #f7f7f7;
+}
+
+/* BANNER */
+.product-banner {
+  height: 260px;
+  background: #a98aa0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-banner h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+/* MAIN */
+.product-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+/* FILTER */
+.filter-section {
+  width: 280px;
+}
+
+/* SEARCH */
+.search-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 30px;
+  border: none;
+  background: #eee7f2;
+}
+
+.search-box span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* FILTER ITEM */
+.filter-item {
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  background: #eee7f2;
+  padding: 16px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* DROPDOWN */
+.filter-dropdown {
+  background: #eee7f2;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.filter-dropdown p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* GRID */
+.product-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+/* CARD */
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 15px 0 5px;
+  line-height: 1.4;
+}
+
+.product-card p {
+  color: #777;
+}
+
+/* =====================
+   TABLET
+===================== */
+@media (max-width: 1024px) {
+  .product-container {
+    flex-direction: column;
+  }
+
+  .filter-section {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 768px) {
+  .product-banner {
+    height: 180px;
+  }
+
+  .product-banner h1 {
+    font-size: 28px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* DROPDOWN ANIMATION */
+.filter-dropdown {
+  background: #eee7f2;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 15px;
+
+  animation: dropdown 0.3s ease;
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.filter-title {
+  background: #eee7f2;
+  padding: 16px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-title:hover {
+  background: #e4dcef;
+}

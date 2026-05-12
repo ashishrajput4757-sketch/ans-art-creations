@@ -1,0 +1,124 @@
+/* ===== MAIN WRAPPER ===== */
+.home {
+  width: 100%;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  margin: 60px 0 30px;
+
+  color: #2a2a2a;
+  position: relative;
+}
+
+/* UNDERLINE EFFECT */
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #b48ead;
+
+  display: block;
+  margin: 10px auto 0;
+
+  border-radius: 2px;
+}
+
+/* ===== CATEGORY SECTION SPACING ===== */
+.category-section {
+  padding: 0 80px 60px;
+}
+
+/* ===== CATEGORY GRID (fallback if not styled already) ===== */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* ===== CATEGORY CARD BASIC ===== */
+.category-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px;
+  border-radius: 16px;
+
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* TEXT */
+.category-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.category-content button {
+  padding: 8px 18px;
+  border: 2px solid #b48ead;
+  background: transparent;
+  color: #b48ead;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.category-content button:hover {
+  background: #b48ead;
+  color: #fff;
+}
+
+/* IMAGE */
+.category-image img {
+  width: 140px;
+  height: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+  .category-section {
+    padding: 0 30px 50px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .section-title {
+    font-size: 26px;
+    margin: 40px 0 20px;
+  }
+
+  .category-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .category-image img {
+    width: 100px;
+  }
+}
