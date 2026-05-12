@@ -62,13 +62,14 @@ function Navbar() {
             ☰
           </div>
 
-          <Link to="/" className="logo">
-            AACREATIONS
-          </Link>
+          <div className="navbar-logo">
+          <img
+          src="/logo (2).svg"
+          alt="Logo"
+          />
+          <h1>AACREATIONS </h1>
+          </div>
 
-          {/*<Link to="/" className="logo">
-            <img src="/logo.png" alt="logo" />
-          </Link>*/}
 
           {/* DESKTOP MENU */}
           <nav className="nav-center">
