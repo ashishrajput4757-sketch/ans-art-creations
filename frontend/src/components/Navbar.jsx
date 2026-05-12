@@ -62,13 +62,13 @@ function Navbar() {
             ☰
           </div>
 
-          <div className="navbar-logo">
+          <a href="/" className="navbar-logo">
           <img
           src="/logo (2).svg"
           alt="Logo"
           />
           <h1>AACREATIONS </h1>
-          </div>
+          </a>
 
 
           {/* DESKTOP MENU */}
@@ -105,10 +105,16 @@ function Navbar() {
           </nav>
 
           {/* RIGHT ICONS */}
-          <div className="nav-right">
-            <span>🔍</span>
-            <span>🛒</span>
-          </div>
+          <a
+            href="https://wa.me/919318330081"
+            target="_blank"
+            rel="noreferrer"
+            className="enquiry-btn"
+          >
+
+  Enquiry Now
+
+</a>
 
         </div>
       </header>
