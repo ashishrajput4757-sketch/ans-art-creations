@@ -7,19 +7,20 @@ function PageLoader() {
     <div className="page-loader">
 
       <video
-        autoPlay
-        muted
-        playsInline
-        className="loader-video"
-      >
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  className="loader-video"
+>
 
-        <source
-          src="/loader.mp4"
-          type="video/mp4"
-        />
+  <source
+    src="/loader.mp4"
+    type="video/mp4"
+  />
 
-      </video>
-
+</video>
     </div>
 
   );
