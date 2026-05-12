@@ -12,6 +12,7 @@
           "scrollbar-width: none"
         ]
       }
-    ]
+    ],
+    "meta-viewport": "off"
   }
 }
