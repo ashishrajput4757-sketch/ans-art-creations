@@ -60,7 +60,7 @@ function Home() {
       >
 
         <h2 className="section-title">
-          Our Product Categories
+          Our Product Line
         </h2>
 
         {/* SLIDER */}

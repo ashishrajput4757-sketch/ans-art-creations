@@ -102,12 +102,14 @@ body {
 /* DROPDOWN */
 .dropdown {
   position: relative;
+  display: inline-block;
 }
 
 .dropdown-menu {
   position: absolute;
-  top: 120%;
+  top: 100%;
   left: 0;
+  padding-top: 8px;
   background: #ff7300d0;
   border-radius: 10px;
   padding: 10px 0;
@@ -117,12 +119,13 @@ body {
   transform: translateY(10px);
   transition: 0.3s;
 
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 .dropdown:hover .dropdown-menu {
   opacity: 1;
-  transform: translateY(0px);
+  visibility: visible;
+  transform: translateY(0);
   pointer-events: auto;
 }
 
