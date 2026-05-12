@@ -30,7 +30,7 @@ function CategorySection({ cat, color }) {
       <div className="banner-image">
 
         <img
-          src={`http://localhost:5000/${cat.image}`}
+          src={`https://ans-art-backend.onrender.com/${cat.image}`}
           alt={cat.name}
         />
 
