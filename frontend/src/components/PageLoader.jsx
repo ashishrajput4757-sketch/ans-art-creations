@@ -6,21 +6,11 @@ function PageLoader() {
 
     <div className="page-loader">
 
-      <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  preload="auto"
-  className="loader-video"
->
-
-  <source
-    src="/loader.gif"
-    type="video/gif"
-  />
-
-</video>
+ <img
+  src="/loader.gif"
+  alt="Loading..."
+  className="loader-gif"
+/>
     </div>
 
   );

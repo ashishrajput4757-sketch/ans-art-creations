@@ -20,12 +20,11 @@
 
 /* VIDEO */
 
-.loader-video {
+.loader-gif {
 
   width: 420px;
 
   object-fit: contain;
-
 }
 
 /* FADE IN */
