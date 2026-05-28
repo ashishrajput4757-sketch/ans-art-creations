@@ -18,10 +18,14 @@ function App() {
 
 useEffect(() => {
 
-  if (
-    sessionStorage.getItem("loaderShown")
-      !== "true"
-  ) {
+  const isReload = performance
+    .getEntriesByType("navigation")[0]
+    ?.type === "reload";
+
+  const firstVisit =
+    !sessionStorage.getItem("loaderShown");
+
+  if (firstVisit || isReload) {
 
     setLoading(true);
 
@@ -34,7 +38,7 @@ useEffect(() => {
 
       setLoading(false);
 
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }
@@ -44,7 +48,7 @@ useEffect(() => {
     setLoading(false);
   }
 
-}, []);
+}, [location.pathname]);
 
   return (
 
