@@ -16,7 +16,36 @@ function App() {
 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+useEffect(() => {
+
+  /* FIRST WEBSITE OPEN */
+
+  if (
+    sessionStorage.getItem("loaderShown")
+      !== "true"
+  ) {
+
+    setLoading(true);
+
+    sessionStorage.setItem(
+      "loaderShown",
+      "true"
+    );
+
+    const timer = setTimeout(() => {
+
+      setLoading(false);
+
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }
+
+  /* ABOUT PAGE ONLY */
+
+  else if (
+    location.pathname === "/about"
+  ) {
 
     setLoading(true);
 
@@ -24,11 +53,17 @@ function App() {
 
       setLoading(false);
 
-    }, 2500);
+    }, 4000);
 
     return () => clearTimeout(timer);
+  }
 
-  }, [location.pathname]);
+  else {
+
+    setLoading(false);
+  }
+
+}, [location.pathname]);
 
   return (
 
