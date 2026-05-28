@@ -9,7 +9,6 @@ function PageLoader() {
       <video
   autoPlay
   muted
-  loop
   playsInline
   preload="auto"
   className="loader-video"
