@@ -24,9 +24,9 @@ function SubCategory() {
         padding: "0 20px"
       }}
     >
-      <p style={{ color: "#777" }}>
-        Home / Category / SubCategory
-      </p>
+       <h2 className="section-title">
+          Our Products
+        </h2>
     </div>
 
     {/* SUBCATEGORY SLIDER */}
@@ -52,7 +52,6 @@ function SubCategory() {
             marginTop: "50px"
           }}
         >
-          No Sub Categories Found
         </p>
 
       )}

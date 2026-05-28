@@ -293,6 +293,20 @@
   transform:
     scale(1.02);
 }
+.section-title {
+  height: 260px;
+  background: #ff5100;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.section-title h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+}
 /* ===== MOBILE ===== */
 
 @media (max-width: 768px) {
