@@ -18,8 +18,6 @@ function App() {
 
 useEffect(() => {
 
-  /* FIRST WEBSITE OPEN */
-
   if (
     sessionStorage.getItem("loaderShown")
       !== "true"
@@ -31,23 +29,6 @@ useEffect(() => {
       "loaderShown",
       "true"
     );
-
-    const timer = setTimeout(() => {
-
-      setLoading(false);
-
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }
-
-  /* ABOUT PAGE ONLY */
-
-  else if (
-    location.pathname === "/about"
-  ) {
-
-    setLoading(true);
 
     const timer = setTimeout(() => {
 
