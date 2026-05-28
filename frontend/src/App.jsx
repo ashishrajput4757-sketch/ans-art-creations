@@ -55,35 +55,32 @@ return (
   <>
 
     {/* LOADER */}
+    {loading && (
 
-    <div
-      style={{
+  <div
+    style={{
 
-        opacity: loading ? 1 : 0,
+      position: "fixed",
 
-        visibility:
-          loading
-            ? "visible"
-            : "hidden",
+      inset: 0,
 
-        pointerEvents:
-          loading
-            ? "auto"
-            : "none",
+      zIndex: 999999
+    }}
+  >
 
-        transition: "0.6s ease",
+    <PageLoader />
 
-        position: "fixed",
+  </div>
 
-        inset: 0,
+)}
+<div
+  style={{
 
-        zIndex: 999999
-      }}
-    >
+    opacity: loading ? 0 : 1,
 
-      <PageLoader />
-
-    </div>
+    transition: "0.6s ease"
+  }}
+>
 
     {/* WEBSITE */}
 
@@ -146,6 +143,7 @@ return (
       </a>
 
     </Layout>
+    </div>
 
   </>
 );
