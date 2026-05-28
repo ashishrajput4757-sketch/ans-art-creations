@@ -24,7 +24,7 @@ function App() {
 
       setLoading(false);
 
-    }, 3000);
+    }, 2800);
 
     return () => clearTimeout(timer);
 
