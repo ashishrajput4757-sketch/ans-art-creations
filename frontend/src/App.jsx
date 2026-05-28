@@ -44,7 +44,7 @@ useEffect(() => {
     setLoading(false);
   }
 
-}, [location.pathname]);
+}, []);
 
   return (
 
