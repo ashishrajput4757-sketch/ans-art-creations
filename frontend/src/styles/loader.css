@@ -4,7 +4,7 @@
 
   inset: 0;
 
-  background: white;
+  background: transparent;
 
   z-index: 999999;
 
@@ -22,7 +22,7 @@
 
 .loader-svg {
 
-  width: 320px;
+  width: 350px;
   background: transparent;
 
   mix-blend-mode: multiply;
@@ -47,6 +47,6 @@
 
   .loader-gif {
 
-    width: 260px;
+    width: 280px;
   }
 }
