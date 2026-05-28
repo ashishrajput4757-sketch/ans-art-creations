@@ -20,11 +20,31 @@
 
 /* VIDEO */
 
-.loader-gif {
+.loader-svg {
 
-  width: 420px;
+  width: 320px;
 
-  object-fit: contain;
+  animation:
+    fadeZoom 2s ease;
+}
+
+@keyframes fadeZoom {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      scale(0.9);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      scale(1);
+  }
 }
 
 /* FADE IN */
@@ -42,26 +62,6 @@
   }
 }
 
-/* VIDEO SMOOTH ZOOM */
-
-@keyframes videoZoom {
-
-  from {
-
-    opacity: 0;
-
-    transform:
-      scale(0.92);
-  }
-
-  to {
-
-    opacity: 1;
-
-    transform:
-      scale(1);
-  }
-}
 @media (max-width: 768px) {
 
   .loader-gif {
