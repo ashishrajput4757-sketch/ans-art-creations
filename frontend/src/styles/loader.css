@@ -26,8 +26,6 @@
 
   object-fit: contain;
 
-  animation:
-    videoZoom 1s ease;
 }
 
 /* FADE IN */
