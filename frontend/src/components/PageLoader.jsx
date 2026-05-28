@@ -7,9 +7,9 @@ function PageLoader() {
     <div className="page-loader">
 
  <img
-  src="/loader.gif"
+  src="/loader.svg"
   alt="Loading..."
-  className="loader-gif"
+  className="loader-svg"
 />
     </div>
 
