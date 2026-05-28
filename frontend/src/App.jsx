@@ -34,7 +34,7 @@ function App() {
 
   <>
 
-    {loading && <PageLoader />}
+    {loading && <PageLoader key={Date.now()} />}
 
     <div
       style={{
