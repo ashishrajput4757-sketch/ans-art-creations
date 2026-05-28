@@ -45,8 +45,9 @@
 
 @media (max-width: 768px) {
 
-  .loader-gif {
+  .loader-svg {
 
     width: 280px;
+    background: transparent;
   }
 }
