@@ -62,3 +62,10 @@
       scale(1);
   }
 }
+@media (max-width: 768px) {
+
+  .loader-gif {
+
+    width: 260px;
+  }
+}
