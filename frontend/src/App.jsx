@@ -36,7 +36,7 @@ useEffect(() => {
 
       setLoading(false);
 
-    }, 4000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }
@@ -53,7 +53,7 @@ useEffect(() => {
 
       setLoading(false);
 
-    }, 2500);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }
