@@ -24,10 +24,10 @@ function SubCategory() {
         padding: "0 20px"
       }}
     >
-       <h2 className="section-title">
-          Our Products
-        </h2>
     </div>
+    <div className="section-banner">
+        <h2>Our Products</h2>
+      </div>
 
     {/* SUBCATEGORY SLIDER */}
     <div className={'sub-slider ${color}'}>
