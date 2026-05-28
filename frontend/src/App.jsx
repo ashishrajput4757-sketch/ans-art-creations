@@ -50,86 +50,102 @@ useEffect(() => {
 
 }, [location.pathname]);
 
-  return (
+return (
 
   <>
 
+    {/* LOADER */}
+
     <div
       style={{
-      opacity: loading ? 1 : 0,
-      visibility: loading
-        ? "visible"
-        : "hidden",
 
-      transition: "0.6s ease",
+        opacity: loading ? 1 : 0,
 
-      position: "fixed",
+        visibility:
+          loading
+            ? "visible"
+            : "hidden",
 
-      inset: 0,
+        pointerEvents:
+          loading
+            ? "auto"
+            : "none",
 
-      zIndex: 999999
+        transition: "0.6s ease",
+
+        position: "fixed",
+
+        inset: 0,
+
+        zIndex: 999999
       }}
-      >
+    >
 
-      <PageLoader/>
-    
-      <Layout>
-
-        <Routes>
-
-          <Route path="/" element={<Home />} />
-
-          <Route
-            path="/category/:id"
-            element={<SubCategory />}
-          />
-
-          <Route
-            path="/products"
-            element={<ProductList />}
-          />
-
-          <Route
-            path="/about"
-            element={<About />}
-          />
-
-        </Routes>
-
-        {/* WHATSAPP BUTTON */}
-
-       <a
-  href="https://wa.me/919318330081"
-  target="_blank"
-  rel="noreferrer"
-  style={{
-    position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    background: "#25D366",
-    color: "#fff",
-    width: "60px",
-    height: "60px",
-    borderRadius: "50%",
-    textDecoration: "none",
-    fontSize: "40px",
-    zIndex: 999,
-
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-
-    boxShadow: "0 8px 25px rgba(37,211,102,0.4)"
-  }}
->
-
-  <FaWhatsapp />
-
-</a>
-
-      </Layout>
+      <PageLoader />
 
     </div>
+
+    {/* WEBSITE */}
+
+    <Layout>
+
+      <Routes>
+
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/category/:id"
+          element={<SubCategory />}
+        />
+
+        <Route
+          path="/products"
+          element={<ProductList />}
+        />
+
+        <Route
+          path="/about"
+          element={<About />}
+        />
+
+      </Routes>
+
+      {/* WHATSAPP BUTTON */}
+
+      <a
+        href="https://wa.me/919318330081"
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          background: "#25D366",
+          color: "#fff",
+          width: "60px",
+          height: "60px",
+          borderRadius: "50%",
+          textDecoration: "none",
+          fontSize: "40px",
+          zIndex: 999,
+
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+
+          boxShadow:
+            "0 8px 25px rgba(37,211,102,0.4)"
+        }}
+      >
+
+        <FaWhatsapp />
+
+      </a>
+
+    </Layout>
 
   </>
 );
