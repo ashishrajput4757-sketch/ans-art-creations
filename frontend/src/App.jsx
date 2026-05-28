@@ -16,23 +16,9 @@ function App() {
 
   const [loading, setLoading] = useState(true);
 
-useEffect(() => {
-
-  const isReload = performance
-    .getEntriesByType("navigation")[0]
-    ?.type === "reload";
-
-  const firstVisit =
-    !sessionStorage.getItem("loaderShown");
-
-  if (firstVisit || isReload) {
+  useEffect(() => {
 
     setLoading(true);
-
-    sessionStorage.setItem(
-      "loaderShown",
-      "true"
-    );
 
     const timer = setTimeout(() => {
 
@@ -41,108 +27,78 @@ useEffect(() => {
     }, 3000);
 
     return () => clearTimeout(timer);
-  }
 
-  else {
+  }, [location.pathname]);
 
-    setLoading(false);
-  }
-
-}, [location.pathname]);
-
-return (
+  return (
 
   <>
 
-    {/* LOADER */}
-    {loading && (
+    {loading && <PageLoader />}
 
-  <div
-    style={{
+    <div
+      style={{
+        opacity: loading ? 0 : 1,
+        transition: "opacity 0.7s ease"
+      }}
+    >
 
-      position: "fixed",
+      <Layout>
 
-      inset: 0,
+        <Routes>
 
-      zIndex: 999999
-    }}
-  >
+          <Route path="/" element={<Home />} />
 
-    <PageLoader />
+          <Route
+            path="/category/:id"
+            element={<SubCategory />}
+          />
 
-  </div>
+          <Route
+            path="/products"
+            element={<ProductList />}
+          />
 
-)}
-<div
+          <Route
+            path="/about"
+            element={<About />}
+          />
+
+        </Routes>
+
+        {/* WHATSAPP BUTTON */}
+
+       <a
+  href="https://wa.me/919318330081"
+  target="_blank"
+  rel="noreferrer"
   style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    background: "#25D366",
+    color: "#fff",
+    width: "60px",
+    height: "60px",
+    borderRadius: "50%",
+    textDecoration: "none",
+    fontSize: "40px",
+    zIndex: 999,
 
-    opacity: loading ? 0 : 1,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
 
-    transition: "0.6s ease"
+    boxShadow: "0 8px 25px rgba(37,211,102,0.4)"
   }}
 >
 
-    {/* WEBSITE */}
+  <FaWhatsapp />
 
-    <Layout>
+</a>
 
-      <Routes>
+      </Layout>
 
-        <Route
-          path="/"
-          element={<Home />}
-        />
-
-        <Route
-          path="/category/:id"
-          element={<SubCategory />}
-        />
-
-        <Route
-          path="/products"
-          element={<ProductList />}
-        />
-
-        <Route
-          path="/about"
-          element={<About />}
-        />
-
-      </Routes>
-
-      {/* WHATSAPP BUTTON */}
-
-      <a
-        href="https://wa.me/919318330081"
-        target="_blank"
-        rel="noreferrer"
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          right: "20px",
-          background: "#25D366",
-          color: "#fff",
-          width: "60px",
-          height: "60px",
-          borderRadius: "50%",
-          textDecoration: "none",
-          fontSize: "40px",
-          zIndex: 999,
-
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-
-          boxShadow:
-            "0 8px 25px rgba(37,211,102,0.4)"
-        }}
-      >
-
-        <FaWhatsapp />
-
-      </a>
-
-    </Layout>
     </div>
 
   </>
