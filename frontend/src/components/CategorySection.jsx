@@ -32,6 +32,7 @@ function CategorySection({ cat, color }) {
         <img
           src={`https://ans-art-backend.onrender.com/${cat.image}`}
           alt={cat.name}
+          loading="lazy"
         />
 
       </div>
