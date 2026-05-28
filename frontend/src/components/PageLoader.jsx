@@ -17,7 +17,7 @@ function PageLoader() {
 
   <source
     src="/loader.gif"
-    type="video/mp4"
+    type="video/gif"
   />
 
 </video>
