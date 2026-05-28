@@ -71,14 +71,14 @@ function ProductList() {
 
           <div className="product-card">
             <img src="/products/p1.jpg" />
-            <h3>Cervical pillow for airplane car office nap pillow</h3>
-            <p>From $5</p>
+            <h3>Sprial Notebook</h3>
+            <p>A4 size</p>
           </div>
 
           <div className="product-card">
             <img src="/products/p2.jpg" />
-            <h3>Geometric striped flower home classy decor</h3>
-            <p>From $5</p>
+            <h3></h3>
+            <p></p>
           </div>
 
         </div>
