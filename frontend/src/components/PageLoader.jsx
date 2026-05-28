@@ -16,7 +16,7 @@ function PageLoader() {
 >
 
   <source
-    src="/loader.webm"
+    src="/loader.mp4"
     type="video/mp4"
   />
 
