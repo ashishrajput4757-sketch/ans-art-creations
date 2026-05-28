@@ -25,7 +25,7 @@
   width: 350px;
   background: transparent;
 
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
 }
 
 /* FADE IN */
