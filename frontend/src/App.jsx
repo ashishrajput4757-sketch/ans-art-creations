@@ -53,7 +53,7 @@ useEffect(() => {
 
       setLoading(false);
 
-    }, 4000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }
