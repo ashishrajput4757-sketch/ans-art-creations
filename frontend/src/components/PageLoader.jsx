@@ -11,7 +11,6 @@ function PageLoader() {
   muted
   loop
   playsInline
-  webkit-playsinline="true"
   preload="auto"
   className="loader-video"
 >
