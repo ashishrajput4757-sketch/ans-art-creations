@@ -7,9 +7,7 @@ function PageLoader() {
     <div className="page-loader">
 
  <img
-  playsInline
-  preload="auto"
-  src="/Loader.svg"
+  src={`/loader.svg?v=${Date.now()}`}
   alt="Loading..."
   className="loader-svg"
 />
