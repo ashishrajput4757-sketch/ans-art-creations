@@ -54,15 +54,25 @@ useEffect(() => {
 
   <>
 
-    {loading && <PageLoader />}
-
     <div
       style={{
-        opacity: loading ? 0 : 1,
-        transition: "opacity 0.7s ease"
-      }}
-    >
+      opacity: loading ? 1 : 0,
+      visibility: loading
+        ? "visible"
+        : "hidden",
 
+      transition: "0.6s ease",
+
+      position: "fixed",
+
+      inset: 0,
+
+      zIndex: 999999
+      }}
+      >
+
+      <PageLoader/>
+    
       <Layout>
 
         <Routes>
