@@ -16,17 +16,19 @@ function App() {
 
   const [loading, setLoading] = useState(true);
 
-useEffect(() => {
+  useEffect(() => {
 
-  const timer = setTimeout(() => {
+    setLoading(true);
 
-    setLoading(false);
+    const timer = setTimeout(() => {
 
-  }, 2500);
+      setLoading(false);
 
-  return () => clearTimeout(timer);
+    }, 3000);
 
-}, []);
+    return () => clearTimeout(timer);
+
+  }, []);
 
   return (
 
