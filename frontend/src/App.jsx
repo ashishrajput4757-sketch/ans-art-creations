@@ -4,19 +4,19 @@ import useModal from "./hooks/useModal";
 
 import Layout from "./layout/Layout";
 
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Categories from "./components/Categories";
-import EcoSection from "./components/EcoSection";
-import Customization from "./components/Customization";
-import SignatureCollections from "./components/SignatureCollections";
-import Gallery from "./components/Gallery";
-import Testimonials from "./components/Testimonials";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import QuickViewModal from "./components/QuickViewModal";
-import PageLoader from "./components/PageLoader";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Categories from "./components/Categories/Categories";
+import EcoSection from "./components/EcoSection/EcoSection";
+import Customization from "./components/Customization/Customization";
+import SignatureCollections from "./components/SignatureCollections/SignatureCollections";
+import Gallery from "./components/Gallery/Gallery";
+import Testimonials from "./components/Testimonials/Testimonials";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import QuickViewModal from "./components/QuickViewModal/QuickViewModal";
+import PageLoader from "./components/PageLoader/PageLoader";
 
 function App() {
   const [loading, setLoading] = useState(true);
