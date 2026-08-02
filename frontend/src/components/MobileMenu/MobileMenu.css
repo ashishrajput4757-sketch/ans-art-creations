@@ -1,0 +1,42 @@
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 18, 15, 0.55);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1090;
+}
+.mobile-overlay.open { opacity: 1; pointer-events: auto; }
+
+.mobile-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(320px, 84vw);
+  background: var(--cream);
+  z-index: 1100;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 100px 32px 32px;
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.12);
+}
+.mobile-panel.open { transform: translateX(0); }
+
+.mobile-panel a {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  display: block;
+}
+.mobile-panel .btn {
+  margin-top: 28px;
+  justify-content: center;
+  border-bottom: none;
+}

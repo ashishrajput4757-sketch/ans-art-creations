@@ -1,0 +1,18 @@
+/* ============================================================
+   DESIGN TOKENS — all CSS custom properties used site-wide.
+   Import this first in global.css; never import it in components.
+   ============================================================ */
+:root {
+  --cream: #F4EFE7;
+  --cream-2: #EDE6DA;
+  --ink: #1C1A17;
+  --orange: #E8622C;
+  --orange-deep: #C64F1F;
+  --gold: #E3A857;
+  --line: rgba(28, 26, 23, 0.12);
+  --line-on-orange: rgba(255, 255, 255, 0.25);
+  --white: #FFFFFF;
+  --muted: #6E6A62;
+  --radius: 2px;
+  --maxw: 1280px;
+}

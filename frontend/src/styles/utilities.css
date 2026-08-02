@@ -1,0 +1,71 @@
+/* ============================================================
+   UTILITIES — shared classes used across multiple components:
+   .wrap container, .eyebrow labels, .btn variants,
+   .section-pad / .section-head / .section-title layout helpers.
+   ============================================================ */
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 48px);
+}
+
+/* Eyebrow label */
+.eyebrow {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+.eyebrow.on-dark { color: var(--gold); }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 14.5px;
+  padding: 15px 28px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+.btn.primary { background: var(--ink); color: var(--cream); }
+.btn.primary:hover { background: var(--orange); border-color: var(--orange); color: #fff; }
+.btn:not(.primary):hover { background: var(--ink); color: var(--cream); }
+.btn.on-orange { border-color: rgba(255,255,255,0.6); color: #fff; }
+.btn.on-orange:hover { background: #fff; color: var(--orange-deep); border-color: #fff; }
+.btn.on-orange.primary { background: #fff; color: var(--orange-deep); border-color: #fff; }
+.btn.on-orange.primary:hover { background: var(--ink); color: #fff; }
+
+/* Section layout shells */
+.section-pad { padding: 130px 0 60px; }
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 56px;
+  gap: 40px;
+}
+.section-title {
+  font-size: clamp(34px, 4vw, 56px);
+  font-weight: 800;
+  max-width: 680px;
+  margin-top: 14px;
+}
+.section-desc {
+  max-width: 480px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+  padding-bottom: 6px;
+}

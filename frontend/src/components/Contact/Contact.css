@@ -1,0 +1,67 @@
+.quote { background: var(--cream-2); }
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 70px;
+}
+.quote-info h2 {
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 800;
+  margin-top: 14px;
+}
+.quote-info p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+  margin-top: 20px;
+  max-width: 400px;
+}
+.contact-rows {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.contact-row .lbl {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.contact-row .val {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 16.5px;
+}
+
+form.qform { display: flex; flex-direction: column; gap: 20px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field label { font-size: 12.5px; font-weight: 600; color: var(--ink); letter-spacing: 0.02em; }
+.field input,
+.field select,
+.field textarea {
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  background: var(--white);
+  border: 1.5px solid var(--line);
+  border-radius: 3px;
+  padding: 14px 16px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s ease;
+  width: 100%;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus { border-color: var(--orange); }
+.field textarea { resize: vertical; min-height: 110px; }
+.qform .btn { align-self: flex-start; margin-top: 6px; transition: background 0.25s ease, border-color 0.25s ease; }

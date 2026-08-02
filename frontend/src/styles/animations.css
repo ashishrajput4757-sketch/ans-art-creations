@@ -1,0 +1,40 @@
+/* ============================================================
+   ANIMATIONS — scroll-triggered reveal classes.
+   .reveal / .line-up are added by the useReveal hook; .in is
+   toggled by IntersectionObserver to trigger the transition.
+   ============================================================ */
+
+/* Block-level reveal (whole cards, grids, form sections) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+              transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.08s; }
+.reveal-d2 { transition-delay: 0.16s; }
+.reveal-d3 { transition-delay: 0.24s; }
+.reveal-d4 { transition-delay: 0.32s; }
+
+/* Line-level reveal (headings, subheads, paragraphs — applied per element
+   by the useReveal hook with auto-staggered transition-delay) */
+.line-up {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.7s cubic-bezier(0.16, 0.84, 0.32, 1),
+              transform 0.7s cubic-bezier(0.16, 0.84, 0.32, 1);
+  will-change: transform, opacity;
+}
+.line-up.in { opacity: 1; transform: translateY(0); }
+
+/* Hero is already visible on page load (no scroll needed) */
+.reveal.in-initial { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .line-up {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
