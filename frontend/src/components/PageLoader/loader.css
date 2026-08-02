@@ -4,7 +4,7 @@
 
   inset: 0;
 
-  background: transparent;
+  background: rgba(244, 239, 231, 0.85);
 
   z-index: 999999;
 
@@ -23,7 +23,7 @@
 .loader-svg {
 
   width: 350px;
-  background: transparent;
+  background: rgba(244, 239, 231, 0.85);
 
   mix-blend-mode: screen;
 }
@@ -47,6 +47,6 @@
   .loader-svg {
 
     width: 280px;
-    background: transparent;
+    background: rgba(244, 239, 231, 0.85);
   }
 }
