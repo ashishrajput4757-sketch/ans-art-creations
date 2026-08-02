@@ -7,7 +7,7 @@ function PageLoader() {
     <div className="page-loader">
 
  <img
-  src={`/Loader.svg?v=${Date.now()}`}
+  src={`/loader.svg?v=${Date.now()}`}
   alt="Loading..."
   className="loader-svg"
 />

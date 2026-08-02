@@ -23,7 +23,7 @@
 .loader-svg {
 
   width: 350px;
-  background: rgba(244, 239, 231, 0.85);
+  background: transparent;
 
   mix-blend-mode: screen;
 }
