@@ -36,7 +36,7 @@ function Categories({ onOpenModal }) {
           </div>
         </div>
 
-        <div className={`cat-grid active-${activeId}`} ref={gridRef}>
+        <div className={`cat-grid reveal reveal-d1 active-${activeId}`} ref={gridRef}>
           {categories.map((cat) => (
             <button
               key={cat.id}
