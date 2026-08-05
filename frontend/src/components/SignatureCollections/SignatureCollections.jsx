@@ -15,7 +15,7 @@ function SignatureCollections() {
   return (
     <section id="collections" className="signature" ref={sectionRef}>
       <div className="wrap">
-        <div className="section-head reveal">
+        <div className="section-head">
           <div>
             <div className="eyebrow">Signature Collections</div>
             <div className="section-title">
