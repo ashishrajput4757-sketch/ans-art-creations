@@ -1,5 +1,6 @@
 import useReveal from '../../hooks/useReveal';
 import './About.css';
+import "../../styles/responsive.css";
 
 const stats = [
   { num: '250+', label: 'Corporate clients served' },

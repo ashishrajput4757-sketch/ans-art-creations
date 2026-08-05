@@ -1,6 +1,7 @@
 import ecoItems from '../../data/eco';
 import useReveal from '../../hooks/useReveal';
 import './EcoSection.css';
+import "../../styles/responsive.css";
 
 function EcoSection({ onOpenModal }) {
   const sectionRef = useReveal({ mode: 'lines' });

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import useReveal from '../../hooks/useReveal';
 import './Contact.css';
+import "../../styles/responsive.css";
 
 const categoryOptions = [
   'Apparel & Accessories',

@@ -1,6 +1,7 @@
 import { clients, testimonials } from '../../data/testimonials';
 import useReveal from '../../hooks/useReveal';
 import './Testimonials.css';
+import "../../styles/responsive.css";
 
 function Testimonials() {
   const sectionRef = useReveal({ mode: 'lines' });

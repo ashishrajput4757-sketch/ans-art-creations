@@ -1,4 +1,5 @@
 import './Footer.css';
+import "../../styles/responsive.css";
 
 const exploreLinks = [
   { href: '#categories',    label: 'Categories' },
