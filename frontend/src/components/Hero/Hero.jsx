@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import './Hero.css';
-import "../../styles/responsive.css";
 
 const tags = ['Apparel & Accessories', 'Drinkware', 'Tech & Gadgets', 'Eco-Friendly', 'Curated Kits'];
 

@@ -1,7 +1,6 @@
 import collections from '../../data/collections';
 import useReveal from '../../hooks/useReveal';
 import './SignatureCollections.css';
-import "../../styles/responsive.css";
 
 const ArrowIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">

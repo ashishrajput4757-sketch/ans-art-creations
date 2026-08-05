@@ -1,7 +1,6 @@
 import useMobileMenu from '../../hooks/useMobileMenu';
 import MobileMenu from '../MobileMenu';
 import './Header.css';
-import "../../styles/responsive.css";
 
 const navLinks = [
   { href: '#categories', label: 'Categories' },

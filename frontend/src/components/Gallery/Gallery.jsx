@@ -1,7 +1,6 @@
 import galleryItems from '../../data/gallery';
 import useReveal from '../../hooks/useReveal';
 import './Gallery.css';
-import "../../styles/responsive.css";
 
 function Gallery({ onOpenModal }) {
   const sectionRef = useReveal({ mode: 'lines' });

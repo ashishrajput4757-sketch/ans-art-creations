@@ -2,7 +2,6 @@ import { useState } from 'react';
 import customizationItems from '../../data/customization';
 import useReveal from '../../hooks/useReveal';
 import './Customization.css';
-import "../../styles/responsive.css";
 
 function Customization() {
   const [activeId, setActiveId] = useState('1');

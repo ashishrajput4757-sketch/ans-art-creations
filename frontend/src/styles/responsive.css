@@ -162,12 +162,3 @@
   .stat { border-right: none; padding-right: 0; }
   .btn { padding: 13px 22px; font-size: 14px; }
 }
-body {
-    border: 10px solid red !important;
-}
-@media (max-width: 1080px) {
-  .cat-grid {
-    border: 8px solid red !important;
-    background: yellow !important;
-  }
-}
