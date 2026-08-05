@@ -165,3 +165,9 @@
 body {
     border: 10px solid red !important;
 }
+@media (max-width: 1080px) {
+  .cat-grid {
+    border: 8px solid red !important;
+    background: yellow !important;
+  }
+}
