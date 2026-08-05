@@ -5,6 +5,7 @@ import './Testimonials.css';
 function Testimonials() {
   const sectionRef = useReveal({ mode: 'lines' });
   const stripRef = useReveal();
+  const headRef = useReveal();
   const gridRef = useReveal();
 
   return (
@@ -17,7 +18,7 @@ function Testimonials() {
           ))}
         </div>
 
-        <div className="section-head">
+        <div className="section-head reveal" ref={headRef}>
           <div>
             <div className="eyebrow">Testimonials</div>
             <div className="section-title">What clients say about working with us.</div>

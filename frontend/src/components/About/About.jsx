@@ -14,7 +14,7 @@ function About() {
   return (
     <section id="about" className="section-pad" ref={sectionRef}>
       <div className="wrap">
-        <div className="section-head">
+        <div className="section-head reveal">
           <div>
             <div className="eyebrow">About Us</div>
             <div className="section-title">Ans Art Creations</div>
