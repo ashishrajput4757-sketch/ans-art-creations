@@ -162,3 +162,8 @@
   .stat { border-right: none; padding-right: 0; }
   .btn { padding: 13px 22px; font-size: 14px; }
 }
+@media (max-width: 1080px) {
+  body {
+    background: red !important;
+  }
+}
