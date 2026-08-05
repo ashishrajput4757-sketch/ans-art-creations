@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import categories from '../../data/categories';
 import useReveal from '../../hooks/useReveal';
 import './Categories.css';
+import "../../styles/responsive.css";
 
 function Categories({ onOpenModal }) {
   const [activeId, setActiveId] = useState('1');

@@ -9,10 +9,19 @@
         "ignore": [
           "backdrop-filter",
           "scrollbar-width",
-          "scrollbar-width: none"
+          "scrollbar-width: none",
+          "min-height: auto"
         ]
       }
     ],
-    "meta-viewport": "off"
+    "meta-viewport": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ]
   }
 }
