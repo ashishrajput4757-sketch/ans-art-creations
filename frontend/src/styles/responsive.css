@@ -164,12 +164,16 @@
 }
 @media (max-width:720px){
 
-.navlinks{
-    display:none !important;
+header .navlinks{
+    display:none;
 }
 
-.menu-toggle{
-    display:block !important;
+header .navcta{
+    display:none;
+}
+
+header .menu-toggle{
+    display:block;
 }
 
 }
