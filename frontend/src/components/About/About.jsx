@@ -1,6 +1,5 @@
 import useReveal from '../../hooks/useReveal';
 import './About.css';
-import "../../styles/responsive.css";
 
 const stats = [
   { num: '250+', label: 'Corporate clients served' },
@@ -15,7 +14,7 @@ function About() {
   return (
     <section id="about" className="section-pad" ref={sectionRef}>
       <div className="wrap">
-        <div className="section-head reveal">
+        <div className="section-head">
           <div>
             <div className="eyebrow">About Us</div>
             <div className="section-title">Ans Art Creations</div>
