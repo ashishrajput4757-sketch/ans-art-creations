@@ -162,18 +162,3 @@
   .stat { border-right: none; padding-right: 0; }
   .btn { padding: 13px 22px; font-size: 14px; }
 }
-@media (max-width:720px){
-
-header .navlinks{
-    display:none;
-}
-
-header .navcta{
-    display:none;
-}
-
-header .menu-toggle{
-    display:block;
-}
-
-}

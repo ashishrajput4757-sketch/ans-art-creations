@@ -7,7 +7,7 @@ import './styles/variables.css';
 import './styles/global.css';
 import './styles/utilities.css';
 import './styles/animations.css';
-import './styles/responsive.css';
+/*import './styles/responsive.css';*/
 
 import App from './App.jsx';
 

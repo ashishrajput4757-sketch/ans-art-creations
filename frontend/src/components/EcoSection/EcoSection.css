@@ -54,3 +54,48 @@
 }
 .eco-body h3 { font-size: 18px; font-weight: 700; margin: 0; }
 .eco-body p { font-size: 13.5px; color: var(--muted); margin: 6px 0 0; }
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* ---------- TABLET ---------- */
+@media (max-width:1080px){
+
+  .eco-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+  }
+
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:720px){
+
+  .eco-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+  }
+
+  .eco-body{
+    padding:14px 14px 18px;
+  }
+
+  .eco-body h3{
+    font-size:15.5px;
+  }
+
+  .eco-body p{
+    font-size:12px;
+  }
+
+}
+
+/* ---------- SMALL PHONE ---------- */
+@media (max-width:380px){
+
+  .eco-grid{
+    grid-template-columns:1fr;
+  }
+
+}

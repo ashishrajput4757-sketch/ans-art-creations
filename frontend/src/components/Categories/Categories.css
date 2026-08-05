@@ -101,3 +101,65 @@
 .cat-card.active img { opacity: 0.9; transform: scale(1.04); }
 .cat-card.active .cat-desc { max-height: 100px; opacity: 1; margin-top: 12px; }
 .cat-card.active .cat-view { max-height: 30px; opacity: 1; }
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* ---------- TABLET ---------- */
+@media (max-width:1080px){
+
+  .cat-grid{
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows:220px;
+    height:auto;
+    gap:16px;
+  }
+
+  .cat-card{
+    min-height:0;
+  }
+
+  .cat-card.active .cat-desc{
+    max-height:200px;
+  }
+
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:720px){
+
+  .cat-grid{
+    grid-template-columns:1fr;
+    grid-auto-rows:unset;
+    gap:12px;
+    height:auto;
+  }
+
+  .cat-card{
+    min-height:160px;
+    padding:22px 20px;
+  }
+
+  .cat-card.active{
+    min-height:280px;
+  }
+
+  .cat-name{
+    font-size:19px;
+  }
+
+  .cat-desc{
+    font-size:13px;
+  }
+
+}
+
+/* ---------- SMALL PHONE ---------- */
+@media (max-width:380px){
+
+  .cat-card{
+    min-height:150px;
+  }
+
+}

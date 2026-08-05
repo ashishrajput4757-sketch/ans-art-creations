@@ -43,3 +43,88 @@
   padding: 12px 18px;
   border-radius: 3px;
 }
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* ---------- TABLET ---------- */
+@media (max-width:1080px){
+
+  .hero{
+    padding-top:70px;
+    min-height:auto;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+    padding:56px 0 26px;
+  }
+
+  .hero-media{
+    max-width:520px;
+    width:100%;
+    margin:0 auto;
+  }
+
+  .hero-ctas{
+    flex-wrap:wrap;
+  }
+
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:720px){
+
+  .hero{
+    padding-top:64px;
+    min-height:auto;
+  }
+
+  .hero-grid{
+    padding:44px 0 30px;
+    gap:32px;
+  }
+
+  .hero h1{
+    font-size:clamp(36px,10vw,52px);
+  }
+
+  .hero-sub{
+    max-width:100%;
+    font-size:15.5px;
+  }
+
+  .hero-ctas{
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+  }
+
+  .hero-ctas .btn{
+    justify-content:center;
+  }
+
+  .hero-tags{
+    gap:8px;
+  }
+
+  .hero-tag{
+    font-size:11.5px;
+    padding:6px 12px;
+  }
+
+  .hero-media .frame{
+    aspect-ratio:4 / 3.6;
+  }
+
+}
+
+/* ---------- SMALL PHONE ---------- */
+@media (max-width:380px){
+
+  .hero h1{
+    font-size:32px;
+  }
+
+}

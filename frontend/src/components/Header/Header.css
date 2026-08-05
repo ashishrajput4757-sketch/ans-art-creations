@@ -72,3 +72,60 @@ nav.wrap {
 .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .menu-toggle.open span:nth-child(2) { opacity: 0; }
 .menu-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* ---------- TABLET ---------- */
+@media (max-width:1080px){
+
+  nav.wrap{
+    height:70px;
+  }
+
+  .navlinks{
+    gap:18px;
+    font-size:13.5px;
+  }
+
+  .navcta .btn{
+    padding:10px 18px;
+    font-size:13px;
+  }
+
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:720px){
+
+  nav.wrap{
+    height:64px;
+  }
+
+  .logo{
+    font-size:17px;
+  }
+
+  .navlinks{
+    display:none;
+  }
+
+  .navcta{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+}
+
+/* ---------- SMALL PHONE ---------- */
+@media (max-width:380px){
+
+  .logo{
+    font-size:16px;
+  }
+
+}

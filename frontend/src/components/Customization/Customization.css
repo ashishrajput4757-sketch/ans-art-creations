@@ -86,3 +86,60 @@
 @media (prefers-reduced-motion: reduce) {
   .impact-item p { transition: opacity 0.2s ease; }
 }
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* ---------- TABLET ---------- */
+@media (max-width:1080px){
+
+  .impact{
+    padding:100px 0 56px;
+  }
+
+  .impact-grid{
+    grid-template-columns:1fr;
+    gap:34px;
+  }
+
+  .impact-media{
+    max-width:100%;
+  }
+
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:720px){
+
+  .impact{
+    padding:70px 0 36px;
+  }
+
+  .impact h2{
+    font-size:clamp(28px,8vw,38px);
+  }
+
+  .impact-grid{
+    gap:22px;
+    margin-top:26px;
+  }
+
+  .impact-media{
+    aspect-ratio:16 / 11;
+  }
+
+  .impact-item{
+    padding:18px 0;
+    gap:14px;
+  }
+
+  .impact-item h3{
+    font-size:17px;
+  }
+
+  .impact-item p{
+    font-size:13.5px;
+    max-width:100%;
+  }
+
+}
