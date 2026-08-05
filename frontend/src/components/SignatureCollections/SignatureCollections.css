@@ -68,3 +68,49 @@
 }
 .sig-arrow svg { width: 16px; height: 16px; }
 .sig-card.tall { grid-row: span 1; }
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* ---------- TABLET ---------- */
+@media (max-width:1080px){
+
+  .signature{
+    padding:100px 0 56px;
+  }
+
+  .sig-grid{
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
+
+  .sig-card{
+    min-height:300px;
+  }
+
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:720px){
+
+  .signature{
+    padding:76px 0 40px;
+  }
+
+  .sig-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+    margin-top:36px;
+  }
+
+  .sig-card{
+    min-height:auto;
+    padding:26px 24px;
+  }
+
+  .sig-card h3{
+    font-size:22px;
+  }
+
+}

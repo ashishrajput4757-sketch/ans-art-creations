@@ -35,3 +35,60 @@
 
 .about-body p { font-size: 16.5px; line-height: 1.75; color: var(--muted); max-width: 540px; }
 .about-body p + p { margin-top: 18px; }
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* ---------- TABLET ---------- */
+@media (max-width:1080px){
+
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:44px;
+  }
+
+  .about-media{
+    max-width:560px;
+    margin:0 auto;
+  }
+
+  .about-stats{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:720px){
+
+  .about-stats{
+    grid-template-columns:1fr 1fr;
+    row-gap:24px;
+  }
+
+  .stat:nth-child(2),
+  .stat:nth-child(3){
+    border-right:none;
+  }
+
+  .about-body p{
+    font-size:15.5px;
+  }
+
+}
+
+/* ---------- SMALL PHONE ---------- */
+@media (max-width:380px){
+
+  .about-stats{
+    grid-template-columns:1fr;
+    row-gap:20px;
+  }
+
+  .stat{
+    border-right:none;
+    padding-right:0;
+  }
+
+}
