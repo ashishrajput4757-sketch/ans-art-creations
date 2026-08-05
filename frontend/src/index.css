@@ -1,8 +1,3 @@
 /* Root CSS entry point — import order matters:
    variables first (tokens), then global reset, then utilities,
    then animations, then responsive LAST (overrides all above). */
-@import './styles/variables.css';
-@import './styles/global.css';
-@import './styles/utilities.css';
-@import './styles/animations.css';
-@import './styles/responsive.css';
