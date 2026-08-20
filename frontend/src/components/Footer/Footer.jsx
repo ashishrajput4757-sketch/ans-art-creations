@@ -14,8 +14,8 @@ const companyLinks = [
 ];
 
 const contactLinks = [
-  { href: 'mailto:hello@aacreations.in', label: 'hello@aacreations.in' },
-  { href: 'tel:+9198000000',             label: '+91 98XXX XXXXX' },
+  { href: 'mailto:info@ansartcreations.com', label: 'info@ansartcreations.com' },
+  { href: 'tel:+91 93183 30081',             label: '+91 93183 30081' },
   { href: '#',                            label: 'New Delhi, India' },
 ];
 
