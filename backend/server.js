@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 const categoryRoutes = require("./routes/categoryRoutes");
@@ -8,6 +9,15 @@ const productRoutes = require("./routes/productRoutes");
 
 const app = express();
 
+const transporter = nodemailer.createTransport({
+  host: "smtp.zoho.com",
+  port: 465,
+  secure: true,
+  auth: {
+    user: process.env.ZOHO_EMAIL,
+    pass: process.env.ZOHO_PASSWORD,
+  }
+});
 // Middleware
 app.use(express.json());
 app.use(cors({
