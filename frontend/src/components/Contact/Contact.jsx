@@ -12,8 +12,8 @@ const categoryOptions = [
 ];
 
 const contactDetails = [
-  { label: 'Email',  value: 'hello@aacreations.in' },
-  { label: 'Phone',  value: '+91 98XXX XXXXX' },
+  { label: 'Email',  value: 'info@ansartcreations.com' },
+  { label: 'Phone',  value: '+91 93183 30081' },
   { label: 'Studio', value: 'New Delhi, India' },
 ];
 
