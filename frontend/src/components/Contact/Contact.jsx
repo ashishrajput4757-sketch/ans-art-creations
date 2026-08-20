@@ -94,7 +94,7 @@ function Contact() {
             </div>
             <div className="field">
               <label htmlFor="message">Tell us about your requirement</label>
-              <textarea id="message" name="message" placeholder="Quantity, timeline, branding needs..." value={form.message} onChange={handleChange} />
+              <textarea id="message" name="message" placeholder="Please mention the product(s), quantity, branding requirements, delivery location, and any special instructions." value={form.message} onChange={handleChange} />
             </div>
             <button
               type="submit"

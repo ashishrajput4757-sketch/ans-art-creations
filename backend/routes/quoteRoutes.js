@@ -40,23 +40,36 @@ const transporter = nodemailer.createTransport({
                                                                                                                                         subject: `New Quote Request${company ? ` - ${company}` : ""}`,
                                                                                                                                               html: `
                                                                                                                                                       <div style="font-family: Arial, sans-serif; line-height: 1.6;">
-                                                                                                                                                                <h2>New Quote Request</h2>
+                                                                                                                                                                <h2>New Quote Request Received</h2>
 
                                                                                                                                                                           <hr>
 
                                                                                                                                                                                     <h3>Customer Details</h3>
 
+                                                                                                                                                                                    <p>----------------------------</p>
+
                                                                                                                                                                                               <p><strong>Name:</strong> ${name}</p>
                                                                                                                                                                                                         <p><strong>Company:</strong> ${company || "Not provided"}</p>
                                                                                                                                                                                                                   <p><strong>Email:</strong> ${email}</p>
                                                                                                                                                                                                                             <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
-                                                                                                                                                                                                                                      <p><strong>Category:</strong> ${category || "Not provided"}</p>
+                                                                                                                                                                                                                            <h3>Enquiry Details</h3>
 
-                                                                                                                                                                                                                                                <h3>Requirement</h3>
+                                                                                                                                                                                                                                <p>----------------------------</p>
 
-                                                                                                                                                                                                                                                          <p>${requirement}</p>
+                                                                                                                                                                                                                                    <p><strong>Category:</strong> ${category || "Not provided"}</p>
 
-                                                                                                                                                                                                                                                                    <hr>
+                                                                                                                                                                                                                                        <p><strong>Requirement:</strong></p>
+                                                                                                                                                                                                                                            <p>${requirement}</p>
+
+                                                                                                                                                                                                                                                <p>----------------------------</p>
+
+                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                          <strong>Submitted On:</strong><br>
+                                                                                                                                                                                                                                                                ${new Date().toLocaleString("en-IN", {
+                                                                                                                                                                                                                                                                        dateStyle: "medium",
+                                                                                                                                                                                                                                                                                timeStyle: "short"
+                                                                                                                                                                                                                                                                                      })}
+                                                                                                                                                                                                                                                                                          </p>
 
                                                                                                                                                                                                                                                                               <p>
                                                                                                                                                                                                                                                                                           This enquiry was submitted through the ANS ART CREATIONS website.
