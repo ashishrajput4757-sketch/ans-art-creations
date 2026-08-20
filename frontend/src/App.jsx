@@ -45,9 +45,9 @@ function App() {
             <Categories onOpenModal={openModal} />
             <EcoSection onOpenModal={openModal} />
             <Customization />
-            {/*<SignatureCollections />*/}
+            <SignatureCollections />
             <Gallery onOpenModal={openModal} />
-            <Testimonials />
+            {/*<Testimonials />*/}
             <About />
             <Contact />
           </main>
