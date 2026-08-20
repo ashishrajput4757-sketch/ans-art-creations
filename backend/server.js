@@ -6,6 +6,7 @@ require("dotenv").config();
 
 const categoryRoutes = require("./routes/categoryRoutes");
 const productRoutes = require("./routes/productRoutes");
+const quoteRoutes = require("./routes/quoteRoutes");
 
 const app = express();
 
@@ -33,6 +34,9 @@ app.use("/uploads", express.static("uploads"));
 app.use("/api/category", categoryRoutes);
 
 app.use("/api/product", productRoutes);
+
+app.use("/api/quote", quoteRoutes);
+
 
 // Test route
 app.get("/", (req, res) => {
