@@ -11,7 +11,7 @@ import EcoSection from "./components/EcoSection/EcoSection";
 import Customization from "./components/Customization/Customization";
 import SignatureCollections from "./components/SignatureCollections/SignatureCollections";
 import Gallery from "./components/Gallery/Gallery";
-/*import Testimonials from "./components/Testimonials/Testimonials";*/
+import Testimonials from "./components/Testimonials/Testimonials";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
